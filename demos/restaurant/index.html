@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ember &amp; Oak | Wood-Fired Kitchen</title>
+<meta name="description" content="Ember &amp; Oak is a wood-fired kitchen serving seasonal dishes, natural wine and slow evenings. Book your table online.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <a class="logo" href="#top">Ember <span>&amp;</span> Oak</a>
+  <button class="burger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+  <nav id="menu-nav">
+    <a href="#about">Story</a>
+    <a href="#menu">Menu</a>
+    <a href="#visit">Visit</a>
+    <a class="btn btn-small" href="#book">Book a table</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Wood-fired kitchen &middot; Natural wine</p>
+    <h1>Food cooked slowly,<br>over real fire.</h1>
+    <p class="lead">Seasonal ingredients, local farms and an oven that has not gone cold since opening day.</p>
+    <div class="hero-actions">
+      <a class="btn" href="#book">Reserve a table</a>
+      <a class="btn btn-ghost" href="#menu">See the menu</a>
+    </div>
+  </div>
+  <div class="hero-glow" aria-hidden="true"></div>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Our story</p>
+      <h2>Simple food, honest fire.</h2>
+      <p>We opened Ember &amp; Oak with one idea: cook fewer things, but cook them properly. Every dish touches the wood oven, and every ingredient comes from producers we know by name.</p>
+      <p>No tasting menus, no fuss. Just a warm room, good bread and a table that is yours for the evening.</p>
+      <ul class="facts">
+        <li><strong>12</strong><span>local farms</span></li>
+        <li><strong>48h</strong><span>dough fermentation</span></li>
+        <li><strong>100%</strong><span>wood-fired</span></li>
+      </ul>
+    </div>
+    <div class="art" aria-hidden="true">
+      <svg viewBox="0 0 400 480" role="img">
+        <defs>
+          <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#f6a14a"/><stop offset="1" stop-color="#b3391a"/>
+          </linearGradient>
+          <radialGradient id="g2" cx="50%" cy="80%" r="60%">
+            <stop offset="0" stop-color="#ffd48a" stop-opacity=".9"/><stop offset="1" stop-color="#ffd48a" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="480" rx="24" fill="#1b1411"/>
+        <rect width="400" height="480" rx="24" fill="url(#g2)"/>
+        <path d="M200 90c40 60 90 90 90 170a90 90 0 0 1-180 0c0-50 30-70 50-110 10 25 25 35 40 30-10-30-10-60 0-90z" fill="url(#g1)"/>
+        <path d="M200 200c20 30 45 45 45 85a45 45 0 0 1-90 0c0-25 15-35 25-55 5 12 12 17 20 15-5-15-5-30 0-45z" fill="#ffd48a"/>
+        <rect x="70" y="380" width="260" height="14" rx="7" fill="#3a2a22"/>
+        <rect x="90" y="400" width="220" height="14" rx="7" fill="#2c211b"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section menu" id="menu">
+  <div class="wrap">
+    <p class="eyebrow center">The menu</p>
+    <h2 class="center">What is cooking tonight</h2>
+
+    <div class="tabs" role="tablist">
+      <button role="tab" class="tab active" data-target="starters" aria-selected="true">Starters</button>
+      <button role="tab" class="tab" data-target="mains" aria-selected="false">Mains</button>
+      <button role="tab" class="tab" data-target="dessert" aria-selected="false">Dessert</button>
+    </div>
+
+    <div class="panel active" id="starters" role="tabpanel">
+      <article class="dish"><div><h3>Charred flatbread</h3><p>Whipped ricotta, wild honey, thyme</p></div><span>9</span></article>
+      <article class="dish"><div><h3>Burnt leeks</h3><p>Hazelnut romesco, pickled shallot</p></div><span>11</span></article>
+      <article class="dish"><div><h3>Smoked beetroot</h3><p>Goat curd, dill oil, rye crumb</p></div><span>12</span></article>
+      <article class="dish"><div><h3>Oak-roasted oysters</h3><p>Garlic butter, lemon, parsley</p></div><span>16</span></article>
+    </div>
+
+    <div class="panel" id="mains" role="tabpanel">
+      <article class="dish"><div><h3>Fire-roasted chicken</h3><p>Pan juices, charred greens, potato</p></div><span>24</span></article>
+      <article class="dish"><div><h3>Dry-aged ribeye</h3><p>Bone marrow butter, watercress</p></div><span>38</span></article>
+      <article class="dish"><div><h3>Mushroom &amp; barley</h3><p>Smoked egg yolk, aged cheddar <em>(v)</em></p></div><span>21</span></article>
+      <article class="dish"><div><h3>Whole sea bream</h3><p>Salsa verde, blistered tomatoes</p></div><span>29</span></article>
+    </div>
+
+    <div class="panel" id="dessert" role="tabpanel">
+      <article class="dish"><div><h3>Burnt honey tart</h3><p>Crème fraîche, sea salt</p></div><span>9</span></article>
+      <article class="dish"><div><h3>Baked apple</h3><p>Oat crumble, vanilla cream</p></div><span>8</span></article>
+      <article class="dish"><div><h3>Dark chocolate pot</h3><p>Olive oil, flaky salt</p></div><span>9</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section quote">
+  <div class="wrap narrow center">
+    <p class="big-quote">&ldquo;The best bread I have eaten this year, and the chicken is unreal. We stayed three hours and nobody rushed us.&rdquo;</p>
+    <p class="by">&mdash; Sarah L., regular guest</p>
+  </div>
+</section>
+
+<section class="section visit" id="visit">
+  <div class="wrap three-col">
+    <div class="card">
+      <h3>Opening hours</h3>
+      <table>
+        <tr><td>Tue &ndash; Thu</td><td>17:00 &ndash; 22:00</td></tr>
+        <tr><td>Fri &ndash; Sat</td><td>12:00 &ndash; 23:30</td></tr>
+        <tr><td>Sunday</td><td>12:00 &ndash; 21:00</td></tr>
+        <tr><td>Monday</td><td>Closed</td></tr>
+      </table>
+    </div>
+    <div class="card">
+      <h3>Find us</h3>
+      <p>14 Orchard Lane<br>Old Town<br>London, EC1 2AB</p>
+      <p class="muted">2 minutes from the station</p>
+    </div>
+    <div class="card">
+      <h3>Get in touch</h3>
+      <p>hello@emberandoak.example<br>+44 20 0000 0000</p>
+      <p class="muted">Groups of 8+ please call us</p>
+    </div>
+  </div>
+</section>
+
+<section class="section book" id="book">
+  <div class="wrap narrow">
+    <p class="eyebrow center">Reservations</p>
+    <h2 class="center">Book your table</h2>
+    <form class="form" id="booking-form" novalidate>
+      <div class="row">
+        <label>Name<input name="name" type="text" required autocomplete="name" placeholder="Your name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email" placeholder="you@email.com"></label>
+      </div>
+      <div class="row three">
+        <label>Date<input name="date" type="date" required></label>
+        <label>Time
+          <select name="time" required>
+            <option value="">Select</option>
+            <option>17:30</option><option>18:00</option><option>18:30</option>
+            <option>19:00</option><option>19:30</option><option>20:00</option><option>20:30</option>
+          </select>
+        </label>
+        <label>Guests
+          <select name="guests" required>
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+            <option>5</option><option>6</option><option>7</option>
+          </select>
+        </label>
+      </div>
+      <label>Notes <span class="muted">(allergies, occasions)</span>
+        <textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea>
+      </label>
+      <button class="btn full" type="submit">Request reservation</button>
+      <p class="form-msg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Ember &amp; Oak. All rights reserved.</p>
+  <p class="muted">Demo website &mdash; fictional restaurant.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
